@@ -25,6 +25,10 @@ function increment(){
 
 function remove(){
     count -= 1
+    if (count < 0) {
+        count = 0
+    }
+
     countEl.innerText = count
     console.log(count)
 }
